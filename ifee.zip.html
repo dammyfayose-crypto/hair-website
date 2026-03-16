@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY NIkE African Hair Braid./</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #d4af37;
+            --primary-dark: #b8962a;
+            --secondary: #f8f4e9;
+            --dark: #2c2c2c;
+            --light: #ffffff;
+            --gray: #f5f5f5;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            background-color: var(--secondary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--light);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 16px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--light);
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            border: 2px solid var(--primary);
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        /* Services Section */
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 2.7rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            border-color: #b8962a;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-img {
+            height: 700px;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .service-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--gray);
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            font-size: xx-large;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: 50%;
+            display: block;
+        }
+
+        .about-text {
+            flex: 1;
+            font-size: 20px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 20px;
+        }
+
+        .stats {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            margin-right: 40px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(to right, #d4af37, #b8962a);
+            color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url()
+        }
+
+        .testimonial-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 18px;
+            position: relative;
+            font-size: 20px;
+        }
+
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            font-size: 3rem;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .testimonial-text::before {
+            top: -20px;
+            left: -15px;
+        }
+
+        .testimonial-text::after {
+            bottom: -40px;
+            right: -15px;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .client-img {
+            width: 180px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 2px solid var(--light);
+        }
+
+        .client-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .client-name {
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .client-role {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--light++ --primary-dark);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--light);
+            font-size: 25px;
+
+        }
+
+        .contact-text h4 {
+            margin-bottom: 5px;
+        }
+
+        .contact-form {
+            flex: 1;
+            background-color: var(--gray);
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-col h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--light);
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .about-content,
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .about-img {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--light);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 50px;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 20px 0;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .btn {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+            }
+
+            .stats {
+                flex-wrap: wrap;
+            }
+
+            .stat-item {
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><img src="ifeeee.jpg" width="100px" height="100px">HEY NIkE African Hair
+                    Braid.</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Look</h1>
+                <p>Premium hairstyling services that enhance your natural beauty and express your unique personality.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Book Appointment</a>
+                    <a href="#services" class="btn btn-outline">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Discover our range of premium hairstyling treatments</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="re.jpg" alt="braids">
+                    </div>
+                    <div class="service-content">
+                        <h3>Neatly done with clean parts and a smooth, lasting finish. Our braids are styled to fit your
+                            face and brings out your beauty.</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="po.png" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Neatly patterned with clean lines and a flawless finish. Simple yet beautiful, suitable for
+                            every occasion. Design to keep your hair protected and looking fresh.
+                            A timeless style that always makes you stand out.
+                        </h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="so.jpg" alt="Styling">
+                    </div>
+                    <div class="service-content">
+                        <h3>Soft, Texture, and uniquely beautiful stiches hairstyle. Styled to give you a tredy and
+                            eleant look. Light on the scalpand easy to maintain. A modern style that stands out.</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="qa.jpg" alt="braids">
+                        </div>
+                        <div class="service-content">
+                            <h3>Soft, free-flowing, and beautifully styled with care. Adds a touch of elegance and
+                                luxury to your look. Perfect for ladies
+                                who love a natural, classy vibe. Every strand is placed to enhance your beauty.
+                            </h3>
+
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="wa.jpg" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3>Lightweight and gentle on your scalp for maximum comfort. Styled carefully to give you a
+                                soft, natural, and classy look. No pain, no tension-just
+                                pure beauty and confidence. Perfect for ladies who love elegance without stress.</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="ll.jpg" alt="Styling">
+                        </div>
+                        <div class="service-content">
+                            <h3>Styled with neat patterns that highlight your facial beauty. A unique blend of traditons
+                                and modern eleance. Comfortable, lightweight, and beautifully finished.
+                                Perfect for making a graceful statement.
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section" id="services">
+                <div class="container">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="za.jpg" alt="braids">
+                            </div>
+                            <div class="service-content">
+                                <h3>Smooth, side-styled braids with a flawless finish. Bold, Neat, and designed to suit
+                                    your personality. A stylish choice for confident and fashionable women.
+                                    Turn heads effortlessly with this stunning look.
+                                </h3>
+
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="saa.jpg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3>Neatly parted and carefully braided to perfection. Designed to last long while
+                                    keeping your scalp comfortable. Gives
+                                    you a bold, Classy and confident look. Beauty that speake before you say a word.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="rd.jpg" alt="Styling">
+                            </div>
+                            <div class="service-content">
+                                <h3>Neatly insalled for a bold and stylish apperance. Gives you a natural loc look
+                                    without commitment.
+                                    Comfortable, long-lasting, and beautifully finished. Perfect for ladies who love
+                                    strong, confident styles.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="section about" id="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-img">
+                            <img src="ima.png" alt="png">
+                        </div>
+                        <div class="about-text">
+                            <h2>About Our Salon</h2>
+                            <p>At our salon, beauty is more than a service-It's an experience. We beleive every woman
+                                deserves to feel confident, beautiful, and celebrayed the
+                                moment she sits in our chair. With gentle hands, Skilled styling, and a passion for
+                                perfection, we create hairstyles that highlight your natural beauty and fit your
+                                personality.
+                            </p>
+                            <p>We believe you hair deserves gentle hands and professional touch. From the moment you
+                                walk in, your comfort and satisfaction become our priority. We don't just style hair-we
+                                crea smiles and confidence that last.` </p>
+                            <p>We believe beautiful hair gives powerful confidence. Our salon is dedicating to creating
+                                styles that make you feel bold, Proud, and beautiful.
+                                Every look is designed to complement your face,lifestyle, and personal taste.
+                            </p>
+                            <p>We focus on neatness, Comfort, and long-lasting results. Your beauty journey matters to
+                                us from startmto finish. Srep out glowing, confident, and ready to shine.</p>
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">15+</div>
+                                    <div>Years Experience</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5000+</div>
+                                    <div>Happy Clients</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">20+</div>
+                                    <div>Award Winning</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="section testimonials" id="testimonials">
+                <div class="container testimonial-container">
+                    <div class="section-title">
+                        <h2>Client Testimonials</h2>
+                        <p>Hear from our satisfied clients</p>
+                    </div>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                The best hair I've ever had was at HEY NIkE African hair braid to be sincely. HEY NIkE
+                                listened to exactly what I wanted and delivered beyond my expectations. My hair has
+                                never looked healthier.
+                            </div>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="jo.jpg" alt="Client">
+                                </div>
+                                <div>
+                                    <div class="client-name">Olaniran Johnson</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                I came for my wedding hairstyle and was absolutely blown away. The team made me feel
+                                like a princess and my hair stayed perfect all day. Such a nice place wheree u can
+                                actually braid your hair!.
+                            </div>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="go.jpg" alt="Client">
+                                </div>
+                                <div>
+                                    <div class="client-name">Jessica Miller</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                After trying so many salons, I finally found my forever stylist at HEY NIkE African hair
+                                braid. She braid hair with so calmly,and she's is respectful to her customers. The color
+                                correction they did on my damaged hair was miraculous to be honest.
+                            </div>
+                            <div class="client-info">
+                                <div class="client-img">
+                                    <img src="co.jpg" alt="Client">
+                                </div>
+                                <div>
+                                    <div class="client-name">Olivia Mercy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section contact" id="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Contact Us</h2>
+                        <p>Ready for your transformation? Get in touch!</p>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h3>Get In Touch</h3>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Home Address</h4>
+                                    <p> GUNSTRAMSDORFER STRASSE 41/21/9, MÖDLING AUSTRIA. </p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone No:</h4>
+                                    <p>4638110596447.</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>Ifejummy@yahoo.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Working Hours</h4>
+                                    <p>Monday - Friday: 9am - 7pm<br>Saturday: 9am - 5pm<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="appointmentForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Interested In</label>
+                                    <select id="service" class="form-control" required>
+                                        <option value="">Select a service</option>
+                                        <option value="haircut">Braids</option>
+                                        <option value="color">Ghana Weaving</option>
+                                        <option value="styling">Twist</option>
+                                        <option value="other">All back</option>
+                                        <option value="other">Fulani Braids</option>
+                                        <option value="other">Short Hair Styling</option>
+                                        <option value="other">Kids Ponytails</option>
+                                        <option value="other">Hair Relaxing</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" class="form-control"
+                                        placeholder="Tell us about your desired look..."></textarea>
+                                </div>
+                                <button type="submit" class="btn">Book Appointment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-col">
+                            <h3> HEY NIkE African Hair Braid.</h3>
+                            <p>Premium hairstyling services that enhance your natural beauty and express your unique
+                                personality.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Our Services</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Braids</a></li>
+                                <li><a href="#">Ghana Weaving</a></li>
+                                <li><a href="#">Twist</a></li>
+                                <li><a href="#">All Back</a></li>
+                                <li><a href="#">Fulani Braids</a></li>
+                                <li><a href="#">Short Hair Styling</a></li>
+                                <li><a href="#">Hair Relaxing</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to receive updates, special offers, and styling tips.</p>
+                            <form class="newsletter-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email Address" required>
+                                </div>
+                                <button type="submit" class="btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2026 HEY NIkE African hair braid. All Rights Reserved.</p>
+                    </div>
+                </div>
+                </div>
+            </footer>
+
+            <script>
+                // Mobile Menu Toggle
+                const mobileMenu = document.querySelector('.mobile-menu');
+                const navLinks = document.querySelector('.nav-links');
+
+                mobileMenu.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    mobileMenu.querySelector('i').classList.toggle('fa-bars');
+                    mobileMenu.querySelector('i').classList.toggle('fa-times');
+                });
+
+                // Close mobile menu when clicking a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        mobileMenu.querySelector('i').classList.add('fa-bars');
+                        mobileMenu.querySelector('i').classList.remove('fa-times');
+                    });
+                });
+
+                // Smooth scrolling for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+
+                // Form submission
+                const appointmentForm = document.getElementById('appointmentForm');
+                if (appointmentForm) {
+                    appointmentForm.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        alert('Thank you for your booking request! We will contact you shortly to confirm your appointment.');
+                        this.reset();
+                    });
+                }
+
+                // Header scroll effect
+                window.addEventListener('scroll', () => {
+                    const header = document.querySelector('header');
+                    if (window.scrollY > 100) {
+                        header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                        header.style.background = 'rgba(255, 255, 255, 0.95)';
+                    } else {
+                        header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+                        header.style.background = 'var(--light)';
+                    }
+                });
+            </script>
+</body>
+
+</html>
